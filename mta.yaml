@@ -13,11 +13,6 @@ modules:
  
 
 resources:
- - name: hdi_tinyworld
-   properties:
-      hdi-container-name: ${service-name}
-   type: com.sap.xs.hdi-container
-
  - name: hdi_tinydb
    properties:
       hdi-container-name_2: ${service-name}
