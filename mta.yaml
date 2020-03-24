@@ -1,17 +1,25 @@
 ID: sapcloud-hana-project-test
 _schema-version: '2.1'
-description: Test HANA App
+description: Test HANA App - tinyworld
 version: 0.0.1
 
 modules:
- - name: db
+ - name: tinydb
    type: hdb
-   path: db
+   path: tinydb
    requires:
-    - name: hdi_db
+    - name: hdi_tinydb
+
+ 
 
 resources:
- - name: hdi_db
+ - name: hdi_tinyworld
    properties:
       hdi-container-name: ${service-name}
    type: com.sap.xs.hdi-container
+
+ - name: hdi_tinydb
+   properties:
+      hdi-container-name_2: ${service-name}
+   type: com.sap.xs.hdi-container
+
