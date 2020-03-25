@@ -10,7 +10,13 @@ modules:
    requires:
     - name: hdi_tinydb
 
- 
+ - name: tinyjs
+   type: nodejs
+   path: tinyjs
+   provides:
+    - name: tinyjs_api
+      properties:
+         url: ${default-url}
 
 resources:
  - name: hdi_tinydb

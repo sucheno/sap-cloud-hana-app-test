@@ -1,0 +1,7 @@
+namespace "sapcloud-hana-project-test".tinydb;
+
+context tinyf { 
+  entity world { 
+   key continent: String(100); 
+  }; 
+};
