@@ -1,0 +1,12 @@
+namespace "sapcloud-hana-project-test".tinydb;
+
+context Tables {
+    entity world {
+        key continent : String(100);
+    };
+
+    entity country {
+        name   : String(100);
+        partof : association[0..1] to world;
+    };
+};
